@@ -3,6 +3,7 @@
 
 <img width="632" height="316" alt="image" src="https://github.com/user-attachments/assets/691f80fa-d6d4-4051-908a-a1afbc68e97f" />
 
+
 Predict the 3D end-effector position `(x, y, z)` of a **KUKA LBR iiwa** from its joint angles using a pure data-driven approach.
 
 ## Project Overview
@@ -22,6 +23,8 @@ I generated a high-quality synthetic dataset with **PyBullet**, visualized the r
 - **Simulation & Dataset**: PyBullet + KUKA LBR iiwa URDF  
 - **Machine Learning**: XGBoost (multi-output regression)  
 - **Language**: Python
+
+---
 
 ### Pipeline
 
