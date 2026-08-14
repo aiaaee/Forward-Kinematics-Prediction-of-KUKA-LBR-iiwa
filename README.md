@@ -46,3 +46,10 @@ XGBoost is particularly well-suited for this task:
 - Requires minimal hyperparameter tuning compared to neural networks  
 
 It serves as a powerful and practical surrogate model when an analytical FK solution is unavailable or when a fast approximate model is needed.
+
+
+### Result 
+
+The model achieves a relatively high R² score (~0.92), showing that it successfully captures the overall nonlinear relationship between joint angles and end-effector position. However, the absolute position error remains in the range of approximately 25 cm on average.
+This discrepancy is expected: while the model explains most of the variance in the data, the residual error is still large relative to the precision typically required in robotic applications. The success rates further confirm that only a small fraction of predictions fall within tight error thresholds (under 10 cm), while a majority of predictions are within 30 cm of the true position.
+These results serve as a solid baseline and highlight that task-space error (Mean Position Error) is a more informative metric than R² alone for evaluating kinematics models.
