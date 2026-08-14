@@ -53,7 +53,21 @@ It serves as a powerful and practical surrogate model when an analytical FK solu
 
 ### Result 
 
+The Forward Kinematics model was evaluated on a held-out test set using both correlation-based and task-space metrics.
 
+### Evaluation Results
+
+| Metric                        | Value       |
+|-------------------------------|-------------|
+| **Mean Position Error**       | 252.68 mm   |
+| **Median Position Error**     | 247.22 mm   |
+| Standard Deviation            | 95.87 mm    |
+| Maximum Position Error        | 628.23 mm   |
+| Minimum Position Error        | 21.12 mm    |
+| Success Rate (< 50 mm)        | 0.3%        |
+| Success Rate (< 100 mm)       | 3.7%        |
+| Success Rate (< 200 mm)       | 32.3%       |
+| Success Rate (< 300 mm)       | 69.6%       |
 
 The model achieves a relatively high R² score (~0.92), showing that it successfully captures the overall nonlinear relationship between joint angles and end-effector position. However, the absolute position error remains in the range of approximately 25 cm on average.
 
