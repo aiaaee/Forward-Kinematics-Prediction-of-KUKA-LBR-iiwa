@@ -47,6 +47,7 @@ XGBoost is particularly well-suited for this task:
 
 It serves as a powerful and practical surrogate model when an analytical FK solution is unavailable or when a fast approximate model is needed.
 
+---
 
 ### Result 
 
