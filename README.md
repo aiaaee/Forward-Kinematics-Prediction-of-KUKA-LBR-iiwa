@@ -42,12 +42,14 @@ I generated a high-quality synthetic dataset with **PyBullet**, visualized the r
 
 CatBoost is particularly well-suited for this task:
 
-- Excellent at capturing the highly non-linear relationship between joint angles and Cartesian position  
-- Extremely fast training and inference  
-- Strong performance on tabular kinematic data  
-- Requires minimal hyperparameter tuning compared to neural networks  
+- Excellent performance on tabular data (joint angles → Cartesian position)
+- Strong ability to capture complex non-linear relationships in kinematic mappings
+- Requires minimal hyperparameter tuning compared to many other models
+- Robust to overfitting and works well even with moderate dataset sizes
+- Fast training and efficient inference
+- Native support for multi-output regression (predicting x, y, z simultaneously)
 
-It serves as a powerful and practical surrogate model when an analytical FK solution is unavailable or when a fast approximate model is needed.
+It provides a powerful and practical surrogate model for learning the forward kinematics of the KUKA LBR iiwa purely from simulation data.
 
 ---
 
